@@ -13,6 +13,12 @@
 		182F0EF52B92124700290291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182F0EF32B92124700290291 /* Main.storyboard */; };
 		182F0EF72B92124900290291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182F0EF62B92124900290291 /* Assets.xcassets */; };
 		182F0EFA2B92124900290291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182F0EF82B92124900290291 /* LaunchScreen.storyboard */; };
+		182F0F032B921E7900290291 /* MeditationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182F0F012B921E7900290291 /* MeditationCell.swift */; };
+		182F0F042B921E7900290291 /* MeditationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182F0F022B921E7900290291 /* MeditationCell.xib */; };
+		182F0F072B927BE500290291 /* RoutineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182F0F052B927BE500290291 /* RoutineCell.swift */; };
+		182F0F082B927BE500290291 /* RoutineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182F0F062B927BE500290291 /* RoutineCell.xib */; };
+		18B773C02B9593290085752E /* ReminderSaveVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B773BF2B9593290085752E /* ReminderSaveVc.swift */; };
+		18B773C22B95935E0085752E /* ReminderSetVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B773C12B95935E0085752E /* ReminderSetVc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		182F0EF62B92124900290291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182F0EF92B92124900290291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		182F0EFB2B92124900290291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182F0F012B921E7900290291 /* MeditationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationCell.swift; sourceTree = "<group>"; };
+		182F0F022B921E7900290291 /* MeditationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeditationCell.xib; sourceTree = "<group>"; };
+		182F0F052B927BE500290291 /* RoutineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineCell.swift; sourceTree = "<group>"; };
+		182F0F062B927BE500290291 /* RoutineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutineCell.xib; sourceTree = "<group>"; };
+		18B773BF2B9593290085752E /* ReminderSaveVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderSaveVc.swift; sourceTree = "<group>"; };
+		18B773C12B95935E0085752E /* ReminderSetVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderSetVc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,9 @@
 		182F0EEC2B92124700290291 /* LEVELtask */ = {
 			isa = PBXGroup;
 			children = (
+				18B773C32B95BEB70085752E /* GoalsGroup */,
+				18B773C42B95BEBF0085752E /* RoutineGroup */,
+				18B773C52B95BEC30085752E /* ReminderGroup */,
 				182F0EED2B92124700290291 /* AppDelegate.swift */,
 				182F0EEF2B92124700290291 /* SceneDelegate.swift */,
 				182F0EF12B92124700290291 /* ViewController.swift */,
@@ -65,6 +80,33 @@
 				182F0EFB2B92124900290291 /* Info.plist */,
 			);
 			path = LEVELtask;
+			sourceTree = "<group>";
+		};
+		18B773C32B95BEB70085752E /* GoalsGroup */ = {
+			isa = PBXGroup;
+			children = (
+				182F0F012B921E7900290291 /* MeditationCell.swift */,
+				182F0F022B921E7900290291 /* MeditationCell.xib */,
+			);
+			path = GoalsGroup;
+			sourceTree = "<group>";
+		};
+		18B773C42B95BEBF0085752E /* RoutineGroup */ = {
+			isa = PBXGroup;
+			children = (
+				182F0F052B927BE500290291 /* RoutineCell.swift */,
+				182F0F062B927BE500290291 /* RoutineCell.xib */,
+			);
+			path = RoutineGroup;
+			sourceTree = "<group>";
+		};
+		18B773C52B95BEC30085752E /* ReminderGroup */ = {
+			isa = PBXGroup;
+			children = (
+				18B773C12B95935E0085752E /* ReminderSetVc.swift */,
+				18B773BF2B9593290085752E /* ReminderSaveVc.swift */,
+			);
+			path = ReminderGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				182F0EFA2B92124900290291 /* LaunchScreen.storyboard in Resources */,
+				182F0F042B921E7900290291 /* MeditationCell.xib in Resources */,
 				182F0EF72B92124900290291 /* Assets.xcassets in Resources */,
+				182F0F082B927BE500290291 /* RoutineCell.xib in Resources */,
 				182F0EF52B92124700290291 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				182F0EF22B92124700290291 /* ViewController.swift in Sources */,
+				182F0F032B921E7900290291 /* MeditationCell.swift in Sources */,
+				18B773C22B95935E0085752E /* ReminderSetVc.swift in Sources */,
 				182F0EEE2B92124700290291 /* AppDelegate.swift in Sources */,
+				18B773C02B9593290085752E /* ReminderSaveVc.swift in Sources */,
 				182F0EF02B92124700290291 /* SceneDelegate.swift in Sources */,
+				182F0F072B927BE500290291 /* RoutineCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
